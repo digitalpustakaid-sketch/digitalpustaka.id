@@ -1,0 +1,938 @@
+<!DOCTYPE html> 
+<html lang="id"> 
+<head>  
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Digital Pustaka - 500+ Produk Digital PLR</title> 
+    <link rel="stylesheet"    /* ini adalah elemen link yang menghubungkan dokumen HTML dengan
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"> 
+    <style>
+        *  
+        /*ini adalah reset CSS sederhana untuk memastikan konsistensi styling di berbagai browser*/
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /*ini adalah styling dasar untuk body, termasuk font dan warna teks*/
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* ini adalah styling untuk header, termasuk background gradient, warna teks, padding, dan efek sticky untuk tetap terlihat saat scrolling */
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+
+        /* ini adalah styling untuk container yang digunakan untuk membatasi lebar konten dan memberikan padding */
+        .container {
+            max-width: 1200px; /* Membatasi lebar konten agar tidak terlalu lebar di layar besar */
+            margin: 0 auto; /* Mengatur margin otomatis untuk membuat konten berada di tengah */
+            padding: 0 20px; /* Memberikan padding horizontal agar konten tidak menempel ke tepi layar */
+        }
+
+        /* ini adalah styling untuk navigasi, termasuk display flex untuk tata letak horizontal, justify-content untuk spasi antara elemen, dan align-items untuk menyelaraskan elemen secara vertikal */
+        nav {
+            display: flex; /* Menggunakan flexbox untuk tata letak horizontal */
+            justify-content: space-between; /* Memberikan spasi antara logo dan tautan navigasi */
+            align-items: center; /* Menyelaraskan elemen secara vertikal */
+        }
+.logo {
+    display: flex; /* Menggunakan flexbox untuk tata letak horizontal */
+    align-items: center; /* Membuat gambar dan tulisan sejajar rapi secara vertikal */
+    font-size: 1.5rem; /* Ukuran font untuk tulisan "Digital Pustaka" */
+    font-weight: bold; /* Membuat tulisan lebih tebal */
+    color: white;       /* Menjaga warna teks tetap putih */
+    
+    /* Atur jarak antara gambar dan tulisan di sini */
+    gap: 10px; /* Memberikan jarak 10px antara gambar dan tulisan */          
+}
+
+/* Tambahkan ini untuk mengatur ukuran gambar logo agar tidak terlalu besar */
+.logo img {
+    height: 50px;        /* Sesuaikan tinggi logo dengan tinggi navbar Anda */
+    width: 50px;         /* Sesuaikan lebar logo agar proporsional dengan tinggi */
+    object-fit: contain; /* Menjaga proporsi gambar agar tidak terdistorsi */
+}
+        /* ini adalah styling untuk tautan navigasi, termasuk display flex untuk tata letak horizontal, list-style untuk menghilangkan bullet points, dan gap untuk memberikan jarak antar tautan */
+        .nav-links {
+            display: flex;  /* Menggunakan flexbox untuk tata letak horizontal */
+            list-style: none; /* Menghilangkan bullet points pada daftar */
+            gap: 2rem; /* Memberikan jarak 2rem antara tautan navigasi */
+        }
+
+
+        /* ini adalah styling untuk tautan navigasi, termasuk warna teks putih, menghilangkan */
+        .nav-links a {
+            color: white; /* Warna teks putih untuk tautan navigasi */
+            text-decoration: none; /* Menghilangkan garis bawah pada tautan */
+            transition: opacity 0.3s; /* Menambahkan transisi untuk efek hover */
+        }
+
+        /* ini adalah styling untuk efek hover pada tautan navigasi, termasuk mengubah opacity untuk memberikan efek visual saat pengguna mengarahkan kursor ke tautan */
+        .nav-links a:hover {
+            opacity: 0.8; /* Mengurangi opacity untuk memberikan efek visual saat hover */
+        }
+
+        /* Hero Section ini adalah styling untuk bagian hero, termasuk background gradient, warna teks putih, padding yang besar untuk memberikan ruang, dan text-align center untuk membuat teks berada di tengah */
+        .hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); /* Gradient background untuk bagian hero */
+            color: white; /* Warna teks putih untuk kontras dengan background */
+            padding: 100px 20px; /* Padding yang besar untuk memberikan ruang di sekitar konten hero */
+            text-align: center; /* Mengatur teks agar berada di tengah secara horizontal */
+        }
+
+        /* ini adalah styling untuk judul utama di bagian hero, termasuk ukuran font yang besar, margin bawah untuk memberikan jarak dengan elemen berikutnya, dan animasi slideDown untuk memberikan efek masuk yang halus */
+        .hero h1 {
+            font-size: 3.5rem; /* Ukuran font yang besar untuk judul utama */
+            margin-bottom: 1rem; /* Margin bawah untuk memberikan jarak dengan elemen berikutnya */
+            animation: slideDown 0.8s ease; /* Menambahkan animasi slideDown untuk memberikan efek masuk yang halus */
+        }
+
+        /* ini adalah styling untuk paragraf di bagian hero, termasuk ukuran font yang lebih kecil dari judul, margin bawah untuk memberikan jarak dengan elemen berikutnya, dan opacity untuk memberikan efek visual yang lebih lembut */
+        .hero p {
+            font-size: 1.3rem; /* Ukuran font yang lebih kecil dari judul untuk paragraf */
+            margin-bottom: 2rem; /* Margin bawah untuk memberikan jarak dengan elemen berikutnya */
+            opacity: 0.95; /* Mengurangi opacity untuk memberikan efek visual yang lebih lembut pada teks paragraf */
+        }
+
+        /* ini adalah styling untuk bagian harga di bagian hero, termasuk background dengan transparansi, padding untuk memberikan ruang di dalamnya, border-radius untuk membuat sudut melengkung, margin untuk memberikan jarak dengan elemen lain, dan backdrop-filter untuk memberikan efek blur pada latar belakang */
+        .price-section {
+            background: rgba(255,255,255,0.1); /* Background dengan transparansi untuk memberikan efek gelap pada bagian harga */
+            padding: 2rem; /* Padding untuk memberikan ruang di dalam bagian harga */
+            border-radius: 10px; /* Border-radius untuk membuat sudut melengkung pada bagian harga */
+            margin: 2rem 0; /* Margin untuk memberikan jarak dengan elemen lain di sekitar bagian harga */
+            backdrop-filter: blur(10px); /* Memberikan efek blur pada latar belakang untuk membuat teks harga lebih menonjol */
+             display: inline-flex; /* Menggunakan inline-flex untuk tata letak horizontal dan agar bagian harga tidak mengambil seluruh lebar */
+             align-items: center; /* Menyelaraskan elemen di dalam bagian harga secara vertikal */
+        }
+
+        /* ini adalah styling untuk harga lama di bagian harga, termasuk ukuran font yang lebih kecil, text-decoration line-through untuk memberikan efek coret pada harga lama, opacity untuk memberikan efek visual yang lebih lembut, dan margin-right untuk memberikan jarak dengan harga baru */
+        .price-old {
+            font-size: 1.2rem; /* Ukuran font yang lebih kecil untuk harga lama */
+            text-decoration: line-through; /* Text decoration untuk memberikan efek coret pada harga lama */
+            opacity: 0.8; /* Mengurangi opacity untuk memberikan efek visual yang lebih lembut */
+            margin-right: 1rem; /* Margin right untuk memberikan jarak dengan harga baru */
+        }
+
+        /* ini adalah styling untuk harga baru di bagian harga, termasuk ukuran font yang besar, font-weight bold untuk membuatnya lebih menonjol, dan warna emas untuk memberikan kesan eksklusif */
+        .price-new {
+            font-size: 2.5rem; /* Ukuran font yang besar untuk harga baru */
+            font-weight: bold; /* Font weight bold untuk membuatnya lebih menonjol */
+            color: #ffd700; /* Warna emas untuk memberikan kesan eksklusif */
+        }
+
+        /* ini adalah styling untuk badge diskon di bagian harga, termasuk display inline-block untuk membuatnya sejajar dengan teks harga, background merah untuk menarik perhatian, padding untuk memberikan ruang di dalam badge, border-radius untuk membuatnya berbentuk pill, font-weight bold untuk membuat teks lebih menonjol, margin-left untuk memberikan jarak dengan harga baru, dan animasi pulse untuk memberikan efek berdenyut yang menarik perhatian */
+        .discount-badge {
+            display: inline-block; /* Display inline-block untuk membuat badge sejajar dengan teks harga */
+            background: #ff6b6b; /* Background merah untuk menarik perhatian pada badge diskon */
+            padding: 0.5rem 1rem; /* Padding untuk memberikan ruang di dalam badge diskon */
+            border-radius: 50px; /* Border-radius untuk membuat badge berbentuk pill yang lebih menarik */
+            font-weight: bold; /* Font weight bold untuk membuat teks di dalam badge lebih menonjol */
+            margin-left: 1rem; /* Margin left untuk memberikan jarak dengan harga baru */
+            animation: pulse 2s infinite; /* Animasi pulse untuk memberikan efek berdenyut yang menarik perhatian pada badge diskon */
+        }
+
+        /* ini adalah styling untuk tombol call-to-action di bagian hero, termasuk display flex untuk tata letak horizontal, gap untuk memberikan jarak antara tombol, justify-content center untuk membuat tombol berada di tengah, flex-wrap untuk memungkinkan tombol membungkus ke baris berikutnya pada layar kecil, dan margin-top untuk memberikan jarak dengan elemen sebelumnya */
+        .cta-buttons {
+            display: flex; /* Menggunakan flexbox untuk tata letak horizontal pada tombol call-to-action */
+            gap: 1rem; /* Memberikan jarak antara tombol call-to-action */
+            justify-content: center; /* Mengatur tombol call-to-action agar berada di tengah secara horizontal */
+            flex-wrap: wrap; /* Memungkinkan tombol membungkus ke baris berikutnya pada layar kecil untuk responsivitas yang lebih baik */
+            margin-top: 2rem; /* Margin top untuk memberikan jarak dengan elemen sebelumnya di bagian hero */
+        }
+
+        /* ini adalah styling untuk tombol call-to-action, termasuk padding untuk memberikan ruang di dalam tombol, font-size untuk ukuran teks, border none untuk menghilangkan border default, border-radius untuk membuat sudut melengkung, cursor pointer untuk menunjukkan bahwa tombol dapat diklik, font-weight bold untuk */
+        .btn {
+            padding: 15px 40px; /* Padding untuk memberikan ruang di dalam tombol */
+            font-size: 1.1rem; /* Font size untuk ukuran teks */
+            border: none; /* Border none untuk menghilangkan border default pada tombol */
+            border-radius: 50px; /* Border-radius untuk membuat sudut melengkung pada tombol */
+            cursor: pointer; /* Cursor pointer untuk menunjukkan bahwa tombol dapat diklik */
+            font-weight: bold; /* Font weight bold untuk membuat teks */
+            transition: all 0.3s; /* Transition untuk memberikan efek transisi yang halus pada perubahan gaya tombol */
+            text-decoration: none; /* Menghilangkan garis bawah pada tombol yang merupakan tautan */
+            display: inline-block; /* Display inline-block untuk memungkinkan tombol memiliki padding dan margin yang sesuai */
+        }
+
+        /* ini adalah styling untuk tombol utama (btn-primary), termasuk background emas untuk memberikan kesan eksklusif, warna teks gelap untuk kontras yang baik, dan efek hover untuk memberikan interaksi visual saat pengguna mengarahkan kursor ke tombol */
+        .btn-primary {
+            background: #ffd700; /* Background emas untuk memberikan kesan eksklusif pada tombol utama */
+            color: #333; /* Warna teks gelap untuk kontras yang baik dengan background emas pada tombol utama */
+        }
+
+            /* ini adalah styling untuk efek hover pada tombol utama (btn-primary), termasuk background yang lebih terang untuk memberikan efek visual saat hover, transform translateY untuk memberikan efek mengangkat tombol, dan box-shadow untuk memberikan efek bay */
+        .btn-primary:hover {
+            background: #ffed4e; /* Background yang lebih terang untuk memberikan efek visual saat hover pada tombol utama */
+            transform: translateY(-2px); /* Transform translateY untuk memberikan efek mengangkat tombol saat hover pada tombol utama */
+            box-shadow: 0 5px 20px rgba(255,215,0,0.4); /* Box-shadow untuk memberikan efek bayangan yang lebih besar saat hover pada tombol utama */
+        }
+
+        /* ini adalah styling untuk tombol sekunder (btn-secondary), termasuk background putih untuk memberikan kontras dengan bagian hero, warna teks ungu untuk konsistensi dengan tema warna, dan efek hover untuk memberikan interaksi visual saat pengguna mengarahkan kursor ke tombol */
+        .btn-secondary {
+            background: white; /* Background putih untuk memberikan kontras dengan bagian hero pada tombol sekunder */
+            color: #667eea; /* Warna teks ungu untuk konsistensi dengan tema warna */
+        }
+
+            /* ini adalah styling untuk efek hover pada tombol sekunder (btn-secondary), termasuk background yang lebih terang untuk memberikan efek visual saat hover dan transform translateY untuk memberikan efek mengangkat tombol */
+        .btn-secondary:hover {
+            background: #f0f0f0; /* Background yang lebih terang untuk memberikan efek visual saat hover pada tombol sekunder */
+            transform: translateY(-2px); /* Transform translateY untuk memberikan efek mengangkat tombol saat hover pada tombol sekunder */
+        }
+
+        /* Statistics Section */
+        .stats {
+            background: #f8f9fa; /* Background yang lebih terang untuk memberikan kontras dengan bagian hero pada section statistik */
+            padding: 60px 20px; /* Padding yang besar untuk memberikan ruang di sekitar konten statistik */
+        }
+
+        /* ini adalah styling untuk grid statistik, termasuk display grid untuk tata letak berbasis grid, grid-template-columns untuk menentukan jumlah kolom dan ukuran minimum, gap untuk memberikan jarak antar item dalam grid, dan margin-top untuk memberikan jarak dengan elemen sebelumnya */
+        .stats-grid {
+            display: grid; /* Menggunakan grid untuk tata letak berbasis grid pada section statistik */
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Menentukan jumlah kolom dan ukuran minimum untuk item dalam grid statistik */
+            gap: 2rem; /* Memberikan jarak antar item dalam grid statistik */
+            margin-top: 2rem; /* Margin top untuk memberikan jarak dengan elemen sebelumnya di section statistik */
+        }
+
+            /* ini adalah styling untuk kartu statistik, termasuk background putih untuk memberikan kontras dengan background section, padding untuk memberikan ruang di dalam kartu, border-radius untuk membuat sudut melengkung, text-align center untuk membuat teks berada di tengah, box-shadow untuk memberikan efek bayangan yang halus, dan transition untuk */
+        .stat-card {
+            background: white; /* Background putih untuk memberikan kontras dengan background section pada kartu statistik */
+            padding: 2rem; /* Padding untuk memberikan ruang di dalam kartu statistik */
+            border-radius: 10px; /* Border-radius untuk membuat sudut melengkung pada kartu statistik */
+            text-align: center; /* Text-align center untuk membuat teks berada di tengah pada kartu statistik */
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08); /* Box-shadow untuk memberikan efek bayangan yang halus pada kartu statistik */
+            transition: transform 0.3s; /* Transition untuk memberikan efek transisi yang halus pada transformasi kartu statistik saat hover */
+        }
+
+        .stat-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #667eea;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-label {
+            color: #666;
+            font-size: 0.95rem;
+        }
+
+        /* Features Section */
+        .features {
+            padding: 60px 20px;
+            background: white;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 3rem;
+            color: #333;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .feature-card {
+            background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%);
+            padding: 2rem;
+            border-radius: 10px;
+            border-left: 5px solid #667eea;
+            transition: all 0.3s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.2);
+        }
+
+        .feature-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .feature-card h3 {
+            margin-bottom: 1rem;
+            color: #667eea;
+        }
+
+        /* Categories Section */
+        .categories {
+            background: #f8f9fa;
+            padding: 60px 20px;
+        }
+
+        .categories-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .category-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+
+        .category-card:hover {
+            background: #667eea;
+            color: white;
+            transform: scale(1.05);
+        }
+
+        /* Testimonials Section */
+        .testimonials {
+            background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%);
+            padding: 60px 20px;
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .testimonial-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .stars {
+            color: #ffd700;
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+
+        .testimonial-text {
+            font-style: italic;
+            color: #666;
+            margin-bottom: 1rem;
+        }
+
+        .testimonial-author {
+            font-weight: bold;
+            color: #667eea;
+        }
+
+        /* FAQ Section */
+        .faq {
+            background: white;
+            padding: 60px 20px;
+        }
+
+        .faq-container {
+            max-width: 700px;
+            margin: 2rem auto;
+        }
+
+        .faq-item {
+            background: #f8f9fa;
+            margin-bottom: 1rem;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+
+        .faq-question {
+            padding: 1.5rem;
+            background: #667eea;
+            color: white;
+            cursor: pointer;
+            font-weight: bold;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background 0.3s;
+        }
+
+        .faq-question:hover {
+            background: #764ba2;
+        }
+
+        .faq-answer {
+            padding: 1.5rem;
+            display: none;
+            color: #666;
+            background: white;
+        }
+
+        .faq-answer.active {
+            display: block;
+        }
+
+        .faq-toggle {
+            font-size: 1.5rem;
+            transition: transform 0.3s;
+        }
+
+        .faq-item.active .faq-toggle {
+            transform: rotate(180deg);
+        }
+
+        /* Bonus Section */
+        .bonus {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .bonus h2 {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .bonus-items {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .bonus-item {
+            background: rgba(255,255,255,0.1);
+            padding: 1.5rem;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .bonus-item h3 {
+            margin-bottom: 0.5rem;
+        }
+
+        /* Footer */
+        footer {
+            background: #2c2c2c;
+            color: white;
+            padding: 3rem 20px;
+            text-align: center;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-section h3 {
+            margin-bottom: 1rem;
+            color: #667eea;
+        }
+
+        .footer-section p {
+            color: #ccc;
+            margin-bottom: 0.5rem;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin-top: 1rem;
+            .social-links a{
+    color: #25D366;
+    font-size: 35px;
+    text-decoration: none;
+}
+        }
+
+        .social-links a {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background: #667eea;
+            border-radius: 50%;
+            line-height: 40px;
+            color: white;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+
+        .social-links a:hover {
+            background: #764ba2;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #444;
+            padding-top: 2rem;
+            color: #999;
+        }
+
+        .whatsapp-btn {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: #25d366;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            text-decoration: none;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            transition: all 0.3s;
+            z-index: 999;
+        }
+
+        .whatsapp-btn:hover {
+            background: #1da851;
+            transform: scale(1.1);
+        }
+
+        /* Animations */
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-links {
+                gap: 1rem;
+                font-size: 0.9rem;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .price-new {
+                font-size: 1.8rem;
+            }
+
+            .section-title {
+                font-size: 1.8rem;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="container">
+          <div class="logo">
+            <img src="logo.jpeg" alt="Logo Digital Pustaka">
+             Digital Pustaka
+        </div>
+             <ul class="nav-links">
+                <li><a href="#features">Fitur</a></li>
+                <li><a href="#categories">Kategori</a></li>
+                <li><a href="#testimonials">Testimonial</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>500+ Produk Digital PLR Siap Jual</h1>
+            <p>Koleksi lengkap produk digital berkualitas  dengan hak jual kembali penuh (PLR)</p>
+            
+            <div class="price-section">
+                <span class="price-old">Rp 120.000</span>
+                <span class="price-new">Rp 15.000</span>
+                <span class="discount-badge">DISKON 87.5%</span>
+            </div>
+
+            <div class="cta-buttons">
+                <a href="https://wa.me/083842605061?text=Halo%20saya%20ingin%20membeli%20paket%20500%2B%20produk%20digital%20PLR" class="btn btn-primary">🛒 Beli Sekarang</a>
+                <button class="btn btn-secondary" onclick="document.getElementById('features').scrollIntoView({behavior: 'smooth'})">📖 Pelajari Lebih Lanjut</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="stats">
+        <div class="container">
+            <h2 class="section-title">Mengapa Pilih Digital Pustaka?</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">500+</div>
+                    <div class="stat-label">Produk Digital</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">Hak Jual Kembali (PLR)</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">24/7</div>
+                    <div class="stat-label">Akses Link Drive</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">30 Hari</div>
+                    <div class="stat-label">Garansi Uang Kembali</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <h2 class="section-title">Keunggulan Paket Kami</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">✨</div>
+                    <h3>Kualitas Premium</h3>
+                    <p>Semua produk telah dikurasi dan dipilih dengan standar kualitas terbaik</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔓</div>
+                    <h3>Hak Penuh (PLR)</h3>
+                    <p>Jual kembali, modifikasi, dan gunakan untuk keperluan komersial tanpa batasan</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Akses Instant</h3>
+                    <p>Dapatkan akses link Google Drive setelah pembayaran dikonfirmasi</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📱</div>
+                    <h3>Berbagai Format</h3>
+                    <p>PDF, ebook, template, dan berbagai format file siap pakai</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💰</div>
+                    <h3>Harga Terjangkau</h3>
+                    <p>Investasi kecil untuk potensi earning besar dengan reseller</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎁</div>
+                    <h3>Update Gratis</h3>
+                    <p>Dapatkan produk baru yang ditambahkan setiap bulannya secara gratis</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories" id="categories">
+        <div class="container">
+            <h2 class="section-title">Kategori Produk</h2>
+            <div class="categories-grid">
+                <div class="category-card">
+                    <div style="font-size: 2rem; margin-bottom: 0.5rem;">📚</div>
+                    <h3>E-Book</h3>
+                </div>
+                <div class="category-card">
+                    <div style="font-size: 2rem; margin-bottom: 0.5rem;">🎓</div>
+                    <h3>Course</h3>
+                </div>
+                <div class="category-card">
+                    <div style="font-size: 2rem; margin-bottom: 0.5rem;">🎨</div>
+                    <h3>Template</h3>
+                </div>
+                <div class="category-card">
+                    <div style="font-size: 2rem; margin-bottom: 0.5rem;">💼</div>
+                    <h3>Business Tools</h3>
+                </div>
+                <div class="category-card">
+                    <div style="font-size: 2rem; margin-bottom: 0.5rem;">📊</div>
+                    <h3>Spreadsheet</h3>
+                </div>
+                <div class="category-card">
+                    <div style="font-size: 2rem; margin-bottom: 0.5rem;">🔧</div>
+                    <h3>Tools & Scripts</h3>
+                </div>
+                <div class="category-card">
+                    <div style="font-size: 2rem; margin-bottom: 0.5rem;">📝</div>
+                    <h3>Konten PLR</h3>
+                </div>
+                <div class="category-card">
+                    <div style="font-size: 2rem; margin-bottom: 0.5rem;">🎯</div>
+                    <h3>& Banyak Lagi</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <h2 class="section-title">Testimoni Pelanggan</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"Produk-produk yang luar biasa berkualitas! Saya sudah mendapatkan return 10x lipat dari investasi awal."</p>
+                    <div class="testimonial-author">- Budi Santoso</div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"Sangat mudah digunakan dan akses link Google Drive-nya sangat cepat. Recommended banget!"</p>
+                    <div class="testimonial-author">- Siti Nurhaliza</div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"Paket terbaik yang pernah saya beli. Harga murah tapi isi produknya sangat berkualitas premium."</p>
+                    <div class="testimonial-author">- Ahmad Wijaya</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bonus Section -->
+    <section class="bonus">
+        <div class="container">
+            <h2>🎁 Bonus Eksklusif Untuk Anda</h2>
+            <div class="bonus-items">
+                <div class="bonus-item">
+                    <h3>📖 Panduan Lengkap</h3>
+                    <p>Cara memanfaatkan semua produk untuk hasil maksimal</p>
+                </div>
+                <div class="bonus-item">
+                    <h3>💡 Template Reseller</h3>
+                    <p>Siap pakai untuk promosi dan marketing</p>
+                </div>
+                <div class="bonus-item">
+                    <h3>📧 Support 24/7</h3>
+                    <p>Tim siap membantu semua pertanyaan Anda</p>
+                </div>
+                <div class="bonus-item">
+                    <h3>🔄 Update Seumur Hidup</h3>
+                    <p>Produk baru ditambahkan setiap bulannya gratis</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Guarantee Section -->
+    <section class="features" style="background: #f0f0f0;">
+        <div class="container">
+            <h2 class="section-title">✅ Garansi 30 Hari Uang Kembali 100%</h2>
+            <p style="text-align: center; color: #666; max-width: 600px; margin: 0 auto;">
+                Jika Anda tidak puas dengan produk kami dalam 30 hari, kami akan mengembalikan uang Anda sepenuhnya. Tanpa pertanyaan. Kami sangat yakin dengan kualitas produk kami!
+            </p>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <h2 class="section-title">Pertanyaan yang Sering Diajukan</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Apa itu PLR (Private Label Rights)?</span>
+                        <span class="faq-toggle">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        PLR adalah hak yang memungkinkan Anda untuk membeli, menggunakan, memodifikasi, dan menjual kembali produk digital kepada orang lain. Anda memiliki kebebasan penuh untuk menggunakan produk sesuai kebutuhan Anda.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Bagaimana cara mengakses produk setelah membeli?</span>
+                        <span class="faq-toggle">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        Setelah pembayaran dikonfirmasi, Anda akan langsung menerima link akses ke Google Drive melalui WhatsApp yang berisi semua 500+ produk digital dalam bentuk folder terorganisir.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Apakah ada batasan dalam menggunakan produk?</span>
+                        <span class="faq-toggle">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        Tidak ada batasan! Dengan PLR, Anda dapat menjual kembali, membuat ulang, menambahkan konten, dan menggunakannya untuk keperluan komersial maupun personal tanpa batasan apapun.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Apakah link akses akan terus tersedia selamanya?</span>
+                        <span class="faq-toggle">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        Ya! Akses link Google Drive akan terus tersedia selama akun Google Drive Anda aktif. Anda juga bisa mengunduh semua file untuk backup pribadi Anda.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Apakah akan ada update produk di masa depan?</span>
+                        <span class="faq-toggle">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        Ya! Kami secara rutin menambahkan produk baru setiap bulannya. Sebagai pembeli, Anda akan mendapatkan akses ke semua produk baru yang ditambahkan tanpa biaya tambahan.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Bagaimana jika saya mengalami masalah dengan akses?</span>
+                        <span class="faq-toggle">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        Tim support kami siap membantu Anda 24/7 melalui WhatsApp. Hubungi kami kapan saja jika mengalami kendala, kami akan segera membantu menyelesaikannya.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="hero" style="background: linear-gradient(135deg, #764ba2 0%, #667eea 100%); padding: 60px 20px;">
+        <div class="container">
+            <h2 style="font-size: 2.5rem; margin-bottom: 1rem;">Jangan Lewatkan Kesempatan Emas Ini!</h2>
+            <p style="font-size: 1.2rem; margin-bottom: 2rem;">Investasi Rp 15.000 untuk akses 500+ produk digital berkualitas PREMIUM dengan hak jual kembali penuh</p>
+            <a href="https://wa.me/083842605061?text=Halo%20saya%20ingin%20membeli%20paket%20500%2B%20produk%20digital%20PLR" class="btn btn-primary" style="font-size: 1.2rem; padding: 18px 50px;">
+                ✅ Beli Sekarang - Hanya Rp 15.000
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3> Digital Pustaka</h3>
+                    <p>Solusi terpercaya untuk produk digital PLR berkualitas tinggi dengan harga terjangkau.</p>
+                    <div class="social-links">
+                       <a href="https://wa.me/6283842605061"
+   target="_blank"
+   title="WhatsApp">
+   <i class="fa-brands fa-whatsapp"></i>
+</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Menu Cepat</h3>
+                    <p><a href="#features" style="color: #ccc; text-decoration: none;">Fitur</a></p>
+                    <p><a href="#categories" style="color: #ccc; text-decoration: none;">Kategori</a></p>
+                    <p><a href="#testimonials" style="color: #ccc; text-decoration: none;">Testimoni</a></p>
+                    <p><a href="#faq" style="color: #ccc; text-decoration: none;">FAQ</a></p>
+                </div>
+                <div class="footer-section">
+                    <h3>Hubungi Kami</h3>
+                    <p>📱 WhatsApp: <a href="https://wa.me/083842605061" style="color: #06ea2c; text-decoration: none;">083842605061</a></p>
+                    <p>📧 Email: digitalpustaka.id@gmail.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Digital Pustaka. Semua hak dilindungi. | Garansi 30 Hari Uang Kembali 100%</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/083842605061?text=Halo%20saya%20ingin%20membeli%20paket%20500%2B%20produk%20digital%20PLR" class="whatsapp-btn" title="Hubungi via WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <script>
+        // FAQ Toggle
+        const faqItems = document.querySelectorAll('.faq-item');
+        faqItems.forEach(item => {
+            item.querySelector('.faq-question').addEventListener('click', function() {
+                // Close other items
+                faqItems.forEach(other => {
+                    if (other !== item) {
+                        other.classList.remove('active');
+                        other.querySelector('.faq-answer').classList.remove('active');
+                    }
+                });
+                // Toggle current item
+                item.classList.toggle('active');
+                item.querySelector('.faq-answer').classList.toggle('active');
+            });
+        });
+
+        // Smooth scroll for nav links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({behavior: 'smooth'});
+                }
+            });
+        });
+
+        // Add scroll animation for cards
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.animation = 'slideDown 0.6s ease forwards';
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.feature-card, .stat-card, .testimonial-card, .category-card').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
