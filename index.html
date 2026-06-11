@@ -48,9 +48,10 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
             align-items: center; /* Menyelaraskan elemen secara vertikal */
         }
 .logo {
+    display: inline flow-root; /* Menggunakan inline flow-root untuk membuat logo tetap berada di satu baris dan menghindari masalah dengan elemen lain di sekitarnya */
     display: flex; /* Menggunakan flexbox untuk tata letak horizontal */
     align-items: center; /* Membuat gambar dan tulisan sejajar rapi secara vertikal */
-    font-size: 1.5rem; /* Ukuran font untuk tulisan "Digital Pustaka" */
+    font-size: 1.3rem; /* Ukuran font untuk tulisan "Digital Pustaka" */
     font-weight: bold; /* Membuat tulisan lebih tebal */
     color: white;       /* Menjaga warna teks tetap putih */
     
@@ -88,7 +89,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         .hero {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); /* Gradient background untuk bagian hero */
             color: white; /* Warna teks putih untuk kontras dengan background */
-            padding: 100px 20px; /* Padding yang besar untuk memberikan ruang di sekitar konten hero */
+            padding: 40px 20px; /* Padding yang besar untuk memberikan ruang di sekitar konten hero */
             text-align: center; /* Mengatur teks agar berada di tengah secara horizontal */
         }
 
@@ -574,22 +575,22 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         <nav class="container">
           <div class="logo">
             <img src="logo.jpeg" alt="Logo Digital Pustaka">
-             Digital Pustaka
+             DigitalPustaka.ID
         </div>
              <ul class="nav-links">
-                <li><a href="#features">Fitur</a></li>
-                <li><a href="#categories">Kategori</a></li>
-                <li><a href="#testimonials">Testimonial</a></li>
-                <li><a href="#faq">FAQ</a></li>
-            </ul>
+    <li><a href="#features" style="font-weight: bold;">Fitur</a></li>
+    <li><a href="#categories" style="font-weight: bold;">Kategori</a></li>
+    <li><a href="#testimonials" style="font-weight: bold;">Testimonial</a></li>
+    <li><a href="#faq" style="font-weight: bold;">FAQ</a></li>
+</ul>
         </nav>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
+    <section class="hero"> 
         <div class="container">
             <h1>500+ Produk Digital PLR Siap Jual</h1>
             <p>Koleksi lengkap produk digital berkualitas  dengan hak jual kembali penuh (PLR)</p>
+            
             
             <div class="price-section">
                 <span class="price-old">Rp 120.000</span>
